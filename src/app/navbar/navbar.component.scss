@@ -1,0 +1,342 @@
+
+  div.screen{
+      width:0px;
+      height:0px;	
+      position:fixed; 
+    margin: 0 auto;
+    top:0px;z-index: 4;right:0px;
+  }
+  div.onscreen{
+    width:100%;
+    height:100%;	
+    position:fixed; 
+  margin: 0 auto;
+  top:0px;z-index: 5;
+  }
+.logo {
+    text-align: center;
+    }
+  .list{margin-top:36px; text-align:left;}
+  .item{
+      height:115px;
+      margin-top:30px 0;
+      padding-left:115px;
+      clear:both;
+  }
+  .item .img, .item span{background:#214273; border-radius:3px;}
+  .item .img{float:left; width:71px; height:71px; margin-left:-93px;}
+  .item span{height:11px; width:180px; margin-bottom:19px; float:left;}
+  .item span:nth-of-type(3){width:75px; margin-bottom:0;}
+  
+  div.burger {
+      height: 30px; 
+      width: 40px;
+      position: absolute;
+      top: 8px;
+      right: 13px;
+      cursor: pointer;	
+  }
+      div.x,
+      div.y,
+      div.z {
+          position: absolute; margin: auto;
+          top: 0px; bottom: 0px;		
+          background:white;
+          border-radius:2px;
+          -webkit-transition: all 200ms ease-out;
+             -moz-transition: all 200ms ease-out;
+              -ms-transition: all 200ms ease-out;
+               -o-transition: all 200ms ease-out;
+                  transition: all 200ms ease-out;
+      }		
+      div.x, div.y, div.z { height: 3px; width: 26px; }
+      div.y{top: 18px;}
+      div.z{top: 37px;}
+      div.x.collapse,div.z.collapse{
+          top: 20px !important;
+              display: flex;
+          background:#4a89dc !important;
+          -webkit-transition: all 70ms ease-out;
+             -moz-transition: all 70ms ease-out;
+              -ms-transition: all 70ms ease-out;
+               -o-transition: all 70ms ease-out;
+                  transition: all 70ms ease-out;
+      }
+       
+      
+      div.rotate30{
+          -ms-transform: rotate(30deg); 
+          -webkit-transform: rotate(30deg); 
+          transform: rotate(30deg);	
+          -webkit-transition: all 50ms ease-out;
+             -moz-transition: all 50ms ease-out;
+              -ms-transition: all 50ms ease-out;
+               -o-transition: all 50ms ease-out;
+                  transition: all 50ms ease-out;					
+      }
+      div.rotate150{
+          -ms-transform: rotate(150deg); 
+          -webkit-transform: rotate(150deg); 
+          transform: rotate(150deg);	
+          -webkit-transition: all 50ms ease-out;
+             -moz-transition: all 50ms ease-out;
+              -ms-transition: all 50ms ease-out;
+               -o-transition: all 50ms ease-out;
+                  transition: all 50ms ease-out;					
+      }
+      
+      div.rotate45{
+          -ms-transform: rotate(45deg); 
+          -webkit-transform: rotate(45deg); 
+          transform: rotate(45deg);	
+          -webkit-transition: all 100ms ease-out;
+             -moz-transition: all 100ms ease-out;
+              -ms-transition: all 100ms ease-out;
+               -o-transition: all 100ms ease-out;
+                  transition: all 100ms ease-out;					
+      }
+      div.rotate135{
+          -ms-transform: rotate(135deg); 
+          -webkit-transform: rotate(135deg); 
+          transform: rotate(135deg);	
+          -webkit-transition: all 100ms ease-out;
+             -moz-transition: all 100ms ease-out;
+              -ms-transition: all 100ms ease-out;
+               -o-transition: all 100ms ease-out;
+                  transition: all 100ms ease-out;					
+      }
+  
+  div.navbar{height:73px;background:#385e97;}
+  
+  div.circle{	
+      border-radius: 50%;
+      width: 0px;
+      height: 0px; 
+      position:absolute;
+      top: 35px;
+      right : 36px;
+      background:#fff;
+      opacity:1;
+    transition:ease-in-out all .5s;
+  }
+  div.circle.expand{
+      width:2258px;
+      height:2258px;
+      top: -560px;
+      right: -565px; 	
+  }
+  div.menu {
+      height: 100%; 
+      width: 100%;
+      position: absolute;
+      top: 0px; left: 0px;
+  }
+  
+  div.menu ul li {
+      opacity:0;
+      font-size:0px;
+      -webkit-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+         -moz-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+          -ms-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+           -o-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+              transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+  }
+  div.menu ul li a {
+      color:#4a89dc;
+      text-transform:uppercase;
+      text-decoration:none;	
+          
+  }
+  
+  div.menu li.animate{
+      font-size:21px !important;
+      opacity:1 !important;
+      -webkit-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+         -moz-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+          -ms-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+           -o-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+              transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+  }
+  div.menu li.animate:nth-of-type(1){	
+      top:120px;
+      transition-delay: 0.0s;	
+  }
+  div.menu li.animate:nth-of-type(2){
+      top:190px;
+      transition-delay: 0.03s;	
+              
+  }
+  div.menu li.animate:nth-of-type(3){
+      top:260px;
+      transition-delay: 0.06s;		
+      
+  }
+  div.menu li.animate:nth-of-type(4){
+      top:330px;
+      transition-delay: 0.09s;		
+      
+  }
+  div.menu li.animate:nth-of-type(5){
+      top:400px;
+      transition-delay: 0.12s;		
+      
+  }
+  div.menu li.animate:nth-of-type(6){
+      top:470px;
+      transition-delay: 0.15s;	
+              
+  }
+  
+  
+  .mar-0{
+      padding: 0px;
+      margin:0px;
+  }
+  .dsp{
+      visibility: hidden;
+  }
+  .dspt{
+      visibility: initial;
+  }
+  //new css
+  .pos{
+      height: 100%;width:100%;padding: 0px;margin: 0px;
+  }
+  ul li{
+      list-style-type: none;
+      padding-top: 30px;
+      font-size: 25px;
+      font-weight: 400;
+      ;
+    }
+    
+    img.avatar {
+        height: 100%;
+        width: 80%;
+        padding-top:9%;
+  }
+    ul.menu-a {
+      padding: auto;
+  }
+  .m-0{
+      margin: 0px;padding: 0px;
+  }
+  .social-icon{
+      color: gray !important;
+      text-decoration: none !important;
+      background-color: transparent;
+      padding-right: 15px;
+  }
+  .icons {
+      margin-left: 40px;
+  }
+  .bg-1a{
+      -webkit-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+      -moz-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+       -ms-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+        -o-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+           transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+      background-image: url('../../assets/img/b657363b608f78b3fb2952aacb84546f.jpg');
+      background-size:cover;
+      width:100%;height:100%;
+  }
+  .bg-2a{
+     background-image: url('../../assets/img/Air-Jordan-Logo-wallpapers.jpg');
+      background-size:cover;
+      width:100%;height:100%;
+      -webkit-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+      -moz-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+       -ms-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+        -o-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+           transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+  }
+  .bg-3a{
+      background-image: url('../../assets/img/52810.jpg');
+      background-size:cover;
+      width:100%;height:100%;
+      -webkit-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+      -moz-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+       -ms-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+        -o-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+           transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+  }
+  .bg-4a{
+      width:100%;height:100%;
+      -webkit-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+      -moz-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+       -ms-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+        -o-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+           transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+  }
+  h1.head-1 {
+      padding: 40px 20px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 3rem;
+  }
+  h3.head-2 {
+      padding: 0px 20px;
+      color: #fff;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.4rem;
+  }
+  p.info {
+      font-size: 15px;
+      position: relative;
+      font-weight: 600;
+      bottom: 0px;
+      right: 0px;
+      color: red;
+      padding-left: 37px;
+  }
+  .menu-a li a {
+      color: black;
+      font-weight: 300;
+      text-decoration: none;
+  }
+  p.info-1 {
+      font-size: 15px;
+      position: relative;
+      font-weight: 600;
+      bottom: 0px;
+      right: 0px;
+      color: Blue;
+      padding-left: 37px;padding-top: 30px;
+  }
+  span.lig {
+      font-size: 12px;
+      font-weight: 400;
+      color: gray;
+  }
+  // for-hiding
+  .hide-1{
+      display: none;
+  }
+  .hide-2{
+      display: none;
+  }
+  .hide-3{
+      display: none;
+  }
+  .hide-4{
+      display: none;
+  }
+  .for-o{
+      opacity: 0;
+      width:0%;
+      height:0%;
+  }
+  .for-z{
+      opacity: 1 !important;
+      width:100%;
+      height:100%;
+      -webkit-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+      -moz-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+       -ms-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+        -o-transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+           transition: all 1000ms cubic-bezier(0.000, 0.995, 0.990, 1.000) !important;
+  }
+
+
+
