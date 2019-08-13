@@ -2,33 +2,33 @@
   <mat-toolbar-row>
     <span class="logo">
       <img src="assets/img/sports-logo-12.png" height="auto" width="140">
-      <div class="txt"> <span class="txt1">SPORTS<span>.</span><span class="txt2">ARENA</span></span></div>
+      <div class="txt"> <span class="txt1">TRINGULUM<span>&nbsp;</span><span class="txt2">SPORTS</span></span></div>
 
     </span>
     <span class="example-spacer"></span>
-    <span class="one"><a class="linkCol" routerLink='home'>Home</a></span>
-    <span class="one" ><a class="linkCol" routerLink='about'>About Us</a></span>
-    <!-- <span class="one" routerLink="">Organisation </span>
+    <span class="one" routerLink='home'>Home</span>
+    <span class="one"  routerLink='about'>About Us</span>
+    <span class="one" routerLink="">Organisation </span>
     <span class="one" routerLink="">Partners</span> 
-    <span class="one" routerLink="">Contact Us</span>-->
-    <span class="one"><a class="linkCol" routerLink='game-info'>Game Info</a></span>
-    <span class="last one"></span>
+    <span class="one" routerLink="">Contact Us</span>
+    <span class="one" routerLink='game-info'>Game Info</span>
+    <span class="last one">
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" (click)="Onclose()">×</a>
+        <div class="search">
+            <input type="search" id="fsearch" name="fsearch" placeholder="Search">
+            <button type="button" class="btn btn-primary" id="searchbtn"><i class="material-icons"> search</i></button>
+         <br> hit the enter
+         </div>
+      </div>
+      
+      <div id="main">
+       
+        <span class="searchbtn" (click)="Onclick()"><i class="material-icons"> search</i></span>
+      </div>
+
+    </span>
 
   </mat-toolbar-row>
 </mat-toolbar> 
-<i id="search-btn" class="material-icons fa-2x">
-  search
-  </i>
-<div id="search-overlay" class="block">
-  <div class="centered">
-    <div id='search-box'>
-      <i id="close-btn" class="fa fa-times fa-2x"></i>
-      <form action='/search' id='search-form' method='get' target='_top'>
-        <input id='search-text' name='q' placeholder='Search' type='text' />
-        <button id='search-button' type='submit'>                     
-<span>Search</span>
-</button>
-      </form>
-    </div>
-  </div>
-</div>

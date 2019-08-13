@@ -11,6 +11,7 @@ import { NavHeadComponent } from './nav-head/nav-head.component';
 import { GameInfoComponent } from './game-info/game-info.component';
 import { ParallaxDirective } from './parallax.directive';
 import {MatCardModule} from '@angular/material/card';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatCardModule} from '@angular/material/card';
     NavbarComponent,
     NavHeadComponent,
     GameInfoComponent,
-    ParallaxDirective
+    ParallaxDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
