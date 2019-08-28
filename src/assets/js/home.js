@@ -16,4 +16,4 @@ wow = new WOW(
     section.className = 'section--purple wow fadeInDown';
     this.parentNode.insertBefore(section, this);
   };
-  ///////////////////////////////////////////////////////////////////////////
+
