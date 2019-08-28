@@ -1,0 +1,81 @@
+
+//Board Of Director
+
+.heading-board{
+    background: #8ac109;
+    padding: 12px;
+}
+@media screen and (max-width: 992px) {
+    .img-responsive {
+      width:100%;
+    }
+  
+  }
+.heading-board h2{
+    text-align: center;
+    background: #ffe100;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 28px;
+}
+
+
+.director-name{
+    background: #eac391;
+    width: 270px;
+    padding: 3%;
+    color: #3d0075;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+    .director-name {
+      width:100%;
+    }
+  }
+  .modal  {
+	background-color: rgba(4, 4, 4, 0.8); 
+		}
+	   
+.modal-dialog {
+		  top: 10%;   
+		  width: 92%;
+		  margin-left: 4%;
+		  max-width: 1350px;
+		   position: absolute;
+			}
+	
+.modal-content {
+		  border-radius: 0px;
+		  border: none;
+		  top: 40%;
+	}
+	
+.modal-header .modal-title{
+    color: #05500c;
+	font-weight: 700;
+	font-size: 23px;
+	}
+	
+	 .modal-body {
+		 color: black;
+	  }
+	
+	  .modal-text{
+		width: 100%;
+		line-height: 24px;
+		text-align: justify;
+		color: #460041;
+		padding: 0px 70px 0px 0px;
+		margin-top: -5px;
+	  }
+		
+	  @media screen and (max-width: 992px) {
+		.modal-text{  
+			padding: 0px;
+		}
+	  
+	  }
+
+//////////////////////////////////////////

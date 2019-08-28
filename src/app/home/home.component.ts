@@ -21,11 +21,14 @@ export class HomeComponent implements OnInit {
         });
       });
     });
+
+    ////////////////////////////////////////////////////
      
-//
+//Triangulum Sports – Your Home For e-Sports
+
 wow.init();
  
-//
+////////////////////////////////////////////////////////
 
 
 

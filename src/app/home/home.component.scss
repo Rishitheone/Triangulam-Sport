@@ -372,20 +372,21 @@
  //Sports Arena Your home for esports
  
  .urhome{
-   background:url("/../assets/img/urhome1.jpg");
+   background:url("/../assets/img/partner0.png");
  }
  .main-heading{
    width: 100%;
    text-align: center;
    font-family: monospace;
-   color: #0fb32c;
-   font-size: 55px;
+   color: #02330a;
+   font-size: 46px;
    margin-top: 15px;
    font-weight: 800;
     
  }
  .img-box img{
    width:100%;
+   border-radius: 5%;
  }
  .main{
    display:block;
@@ -396,7 +397,7 @@
    color:#fff;
  }
  .text-block h2{
-   color: #0fb32c;
+  color: #02330a;
   text-align: center;
  }
  
@@ -414,8 +415,9 @@
  .main.bg-t{
    width:100%; 
    background:rgba(255, 255, 255, 0.2);
-    padding:120px 0;
-   }
+   padding: 44px 0;
+ }
+   
  
  //////////////////////////////////////////////////////////
  
@@ -640,18 +642,71 @@
  }
  @media screen and (max-width: 992px) {
    .partner-details .carousel-item .cr-img img {
-     height:1000px;
+    height: 585px;
    }
  }
  
- .partner-details .text-box {
+ .partner-details .text-box-1 {
      position: absolute;
      top: 50%;
      left: 15%;
      right: 15%;
      color: #000;
      transform: translateY(-50%);
- }
+  }
+
+  .partner-details .text-box-1 p{
+    text-align: justify;
+  }
+
+
+
+ .partner-details .text-box-2 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  right: 15%;
+  color: #000;
+  transform: translateY(-50%);
+}
+
+.partner-details .text-box-2 p{
+  text-align: justify;
+}
+
+.partner-details .text-box-2 img{
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+}
+
+.partner-details .text-box-3 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  right: 15%;
+  color: #000;
+  transform: translateY(-50%);
+}
+
+.partner-details .text-box-3 p{
+  text-align: justify;
+}
+
+
+.partner-details .text-box-3 img{
+  width: 58%;
+    border-radius: 27%;
+}
+
+@media screen and (max-width: 992px) {
+  .partner-details .text-box-3 img{
+    width: 40%;
+    border-radius: 13%;
+
+  }
+}
+
  
  
  //////////////////////////////////////////////////////////
