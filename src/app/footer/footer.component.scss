@@ -13,9 +13,15 @@
 .f-circle{
     color: white;
     border: 1px;
-    padding: 23px 19px 15px 19px;
+    padding: 23px 19px 15px 19px;    
     background:#03032b;
     border-radius: 33px;
+}
+
+@media screen and (max-width: 992px) {
+    .f-circle{
+        padding: 20px 14px 7px 12px;
+    }
 }
 
 .f-circle .material-icons{
@@ -27,7 +33,7 @@
 .f-text{
     float: right;
     color: white;
-    margin-right: 50px;
+    margin-right: 11%;
 
 }
 
@@ -56,7 +62,7 @@ font-weight: 500;
     text-align: justify;
 }
 
-.main-footer h3{
+.main-footer .heading-1{
     color: white;
     font-size: 28px;
     font-weight: bolder;
@@ -64,7 +70,7 @@ font-weight: 500;
     margin-left: 28%;
 }
 
-.main-footer p{
+.main-footer .para-1{
     color: white;
     font-size: 15px;
     font-family: helvetical;
@@ -72,16 +78,32 @@ font-weight: 500;
     margin-left: 28%;
 }
 
+@media screen and (max-width: 992px) {
+    .main-footer .para-1{
+    margin-left: 5%;
+    }
 
+    .main-footer .heading-1{
+        margin-left: 5%;
+    }
+  }
 
- 
-   .footer-social-link ul {
+ .footer-social-link ul {
     list-style-type: none;
     padding: 0;
     margin: 0; }
 .footer-social-link li {
     padding: 0px 13px;
-    display: inline-block; }
+    display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+    .footer-social-link li {
+        padding: 0px 5px;
+    }
+}
+
+
    .footer-social-link a i {
     display: block;
     width: 40px;

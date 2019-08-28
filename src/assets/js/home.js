@@ -1,3 +1,6 @@
+
+//Triangulum Sports – Your Home For e-Sports//
+
 wow = new WOW(
     {
       animateClass: 'animated',
@@ -14,5 +17,3 @@ wow = new WOW(
     this.parentNode.insertBefore(section, this);
   };
 
-
-  

@@ -12,7 +12,15 @@ import { GameInfoComponent } from './game-info/game-info.component';
 import { ParallaxDirective } from './parallax.directive';
 import {MatCardModule} from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
+
 import { PartnerComponent } from './partner/partner.component';
+
+import { OrganisationComponent } from './organisation/organisation.component';
+import {MatMenuModule} from '@angular/material/menu';
+import { AdvisoryBoardComponent } from './advisory-board/advisory-board.component';
+import { DirectorsComponent } from './directors/directors.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,14 +32,20 @@ import { PartnerComponent } from './partner/partner.component';
     GameInfoComponent,
     ParallaxDirective,
     FooterComponent,
+
     PartnerComponent
+    OrganisationComponent,
+    AdvisoryBoardComponent,
+    DirectorsComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   exports: [MatToolbarModule,MatCardModule],
   providers: [],

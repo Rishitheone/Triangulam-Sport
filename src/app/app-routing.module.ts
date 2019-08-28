@@ -4,9 +4,15 @@ import { AbouUsComponent } from './abou-us/abou-us.component';
 import { GameInfoComponent } from './game-info/game-info.component';
 import { HomeComponent } from './home/home.component';
 import { PartnerComponent } from './partner/partner.component';
+import { OrganisationComponent } from './organisation/organisation.component';
+import { AdvisoryBoardComponent } from './advisory-board/advisory-board.component';
+import { DirectorsComponent } from './directors/directors.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
+  {path:'directors',component:DirectorsComponent},
+  {path:'organisation',component:OrganisationComponent},
+  {path:'AdvisoryBoard', component:AdvisoryBoardComponent},
   {path:'about',component:AbouUsComponent},
   {path:'partner',component:PartnerComponent},
   {path:'game-info',component:GameInfoComponent},
