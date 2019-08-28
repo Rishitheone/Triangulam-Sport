@@ -12,6 +12,7 @@ import { GameInfoComponent } from './game-info/game-info.component';
 import { ParallaxDirective } from './parallax.directive';
 import {MatCardModule} from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
+import { PartnerComponent } from './partner/partner.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     NavHeadComponent,
     GameInfoComponent,
     ParallaxDirective,
-    FooterComponent
+    FooterComponent,
+    PartnerComponent
   ],
   imports: [
     BrowserModule,

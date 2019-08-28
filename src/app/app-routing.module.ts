@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { AbouUsComponent } from './abou-us/abou-us.component';
 import { GameInfoComponent } from './game-info/game-info.component';
 import { HomeComponent } from './home/home.component';
+import { PartnerComponent } from './partner/partner.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'about',component:AbouUsComponent},
+  {path:'partner',component:PartnerComponent},
   {path:'game-info',component:GameInfoComponent},
   {path:'home',component:HomeComponent}
 ];
