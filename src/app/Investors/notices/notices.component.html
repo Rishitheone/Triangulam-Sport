@@ -1,0 +1,54 @@
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="assets/img/videoplayback.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <p>NOTICES</p>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="row mr-0">
+  <div class="col-md-1"></div>
+  <div class="col-md-6 sp-top">
+      <div class="mat-elevation-z8">
+          <table mat-table matSort  [dataSource]="dataSource">
+            <!-- Position Column -->
+            <ng-container matColumnDef="date" >
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Date </th>
+              <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+            </ng-container>
+        
+            <!-- Name Column -->
+            <ng-container matColumnDef="title">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+              <td mat-cell *matCellDef="let element"><a routerLink=""> {{element.title}}</a> </td>
+            </ng-container>
+        
+            <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        
+          <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+        
+        </div>
+        
+  </div>
+  <div class="col-md-4 sp-top">
+      <div class="example-container mat-elevation-z8">
+      <mat-list >
+          <h3 mat-subheader class="sticky">In this section</h3>
+          <mat-list-item *ngFor="let element of data">
+            <mat-icon mat-list-icon>label_important</mat-icon>
+            <h4 mat-line>{{element.date}}</h4>
+            <p mat-line> {{element.title}} </p>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+        </mat-list>
+      </div>
+  </div>
+  <div class="col-md-1"></div>
+</div>

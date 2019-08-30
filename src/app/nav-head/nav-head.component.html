@@ -8,11 +8,34 @@
     <span class="example-spacer"></span>
     
 
+    <span class="one" routerLink='home' routerLinkActive="active">Home</span>
+    <span class="one"  routerLink='about' routerLinkActive="active">About Us</span>
+    <span class="one" routerLink='partner' routerLinkActive="active">Partners</span> 
+    <span class="one" routerLink='' routerLinkActive="active">Contact Us</span>
     <span class="one" routerLink='home'>Home</span>
     <span class="one"  routerLink='about'>About Us</span>
  <span class="one" [matMenuTriggerFor]="menu" >Organisation </span>
     <mat-menu #menu="matMenu">
+<<<<<<< HEAD
  <button mat-menu-item  routerLink='directors'>Board of Directors</button>
+=======
+      <button mat-menu-item  routerLink='directors' routerLinkActive="active">Board of Directors</button>
+      <button mat-menu-item  routerLink='AdvisoryBoard' routerLinkActive="active">Advisory Board</button>
+      <button mat-menu-item  routerLink='organisation' routerLinkActive="active">Management</button>
+      </mat-menu>
+    </div>
+
+    <span class="one" routerLink="">Partners</span> 
+    <span class="one" [matMenuTriggerFor]="Investors" >Investors</span>
+    <mat-menu #Investors="matMenu">
+      <button mat-menu-item routerLinkActive="active" routerLink='Eminent'>Our Eminent Investors</button>
+      <button mat-menu-item routerLinkActive="active" routerLink='Notices'>Notices</button>
+      <button mat-menu-item routerLinkActive="active" routerLink='InvestorsContacts'>Investors Contacts</button>
+      </mat-menu>
+    <span class="one" routerLinkActive="active" routerLink='game-info'>Game Info</span>
+
+      <button mat-menu-item  routerLink='directors'>Board of Directors</button>
+>>>>>>> 421c26daaf0a59135142546bb8a75604e9b4b224
       <button mat-menu-item  routerLink='AdvisoryBoard'>Advisory Board</button>
       <button mat-menu-item  routerLink='organisation'>Management</button>
       </mat-menu>

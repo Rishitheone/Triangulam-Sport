@@ -7,6 +7,9 @@ import { PartnerComponent } from './partner/partner.component';
 import { OrganisationComponent } from './organisation/organisation.component';
 import { AdvisoryBoardComponent } from './advisory-board/advisory-board.component';
 import { DirectorsComponent } from './directors/directors.component';
+import { EminentComponent } from './Investors/eminent/eminent.component';
+import { NoticesComponent } from './Investors/notices/notices.component';
+import { InvestorsContactComponent } from './Investors/investors-contact/investors-contact.component';
 import { PartnersComponent } from './partners/partners.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -20,6 +23,9 @@ const routes: Routes = [
   {path:'partner',component:PartnerComponent},
   {path:'game-info',component:GameInfoComponent},
   {path:'home',component:HomeComponent},
+  {path:'Eminent',component:EminentComponent},
+  {path:'Notices',component:NoticesComponent},
+  {path:'InvestorsContacts',component:InvestorsContactComponent},
   {path:'partners',component:PartnersComponent},
   {path:'become-partners',component:BecomePartnerComponent},
   {path:'contactUs',component:ContactUsComponent}
