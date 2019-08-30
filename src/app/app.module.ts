@@ -28,6 +28,10 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import { PartnersComponent } from './partners/partners.component';
+import { BecomePartnerComponent } from './become-partner/become-partner.component';
+import {MatButtonModule} from '@angular/material/button';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 
@@ -48,7 +52,14 @@ import {MatSelectModule} from '@angular/material/select';
     DirectorsComponent,
     EminentComponent,
     NoticesComponent,
-    InvestorsContactComponent
+    InvestorsContactComponent,
+
+    DirectorsComponent,
+    PartnersComponent,
+    BecomePartnerComponent,
+    ContactUsComponent,
+    DirectorsComponent
+
 
   ],
   imports: [
@@ -58,7 +69,8 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserAnimationsModule,
     MatCardModule,
     MatMenuModule,
-    MatListModule,MatIconModule,MatTableModule,MatInputModule,MatFormFieldModule,MatSelectModule
+    MatListModule,MatIconModule,MatTableModule,MatInputModule,MatFormFieldModule,MatSelectModule,
+    MatButtonModule
   ],
   exports: [MatToolbarModule,MatCardModule,MatListModule,MatIconModule,
     MatTableModule,MatSortModule,MatPaginatorModule,MatInputModule,MatFormFieldModule,MatSelectModule],

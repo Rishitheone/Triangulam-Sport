@@ -10,6 +10,9 @@ import { DirectorsComponent } from './directors/directors.component';
 import { EminentComponent } from './Investors/eminent/eminent.component';
 import { NoticesComponent } from './Investors/notices/notices.component';
 import { InvestorsContactComponent } from './Investors/investors-contact/investors-contact.component';
+import { PartnersComponent } from './partners/partners.component';
+import { BecomePartnerComponent } from './become-partner/become-partner.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -23,6 +26,9 @@ const routes: Routes = [
   {path:'Eminent',component:EminentComponent},
   {path:'Notices',component:NoticesComponent},
   {path:'InvestorsContacts',component:InvestorsContactComponent},
+  {path:'partners',component:PartnersComponent},
+  {path:'become-partners',component:BecomePartnerComponent},
+  {path:'contactUs',component:ContactUsComponent}
 ];
 
 @NgModule({
