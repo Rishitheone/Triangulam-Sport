@@ -16,6 +16,10 @@ import { OrganisationComponent } from './organisation/organisation.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { AdvisoryBoardComponent } from './advisory-board/advisory-board.component';
 import { DirectorsComponent } from './directors/directors.component';
+import { PartnersComponent } from './partners/partners.component';
+import { BecomePartnerComponent } from './become-partner/become-partner.component';
+import {MatButtonModule} from '@angular/material/button';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 @NgModule({
@@ -30,7 +34,10 @@ import { DirectorsComponent } from './directors/directors.component';
     FooterComponent,
     OrganisationComponent,
     AdvisoryBoardComponent,
-    DirectorsComponent
+    DirectorsComponent,
+    PartnersComponent,
+    BecomePartnerComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +45,8 @@ import { DirectorsComponent } from './directors/directors.component';
     MatToolbarModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatButtonModule
   ],
   exports: [MatToolbarModule,MatCardModule],
   providers: [],

@@ -24,10 +24,11 @@
   }
   .mat-toolbar-multiple-rows {
     min-height: 64px;  
-    background: #2f476b00;
+    background: #000b1b9e;
     color: white;
     position: fixed;
-    top: 0px;z-index: 4;
+    top: 0px;
+    z-index: 999;
   }
   
   
@@ -38,12 +39,19 @@
   }
   
   .txt{
+    
     font-size: 12px;
     background: #a509096e;
     margin-left: 0px;
     border: 1px;
     border-radius: 5px;
     text-align: center;
+  }
+
+  @media screen and (max-width:600px){
+.txt{
+  font-size: 12px;
+}
   }
   
   
@@ -145,18 +153,13 @@ button:focus {
 outline:none;
 }
 
-
-button{
-  min-width:1%;
-  line-height: 36px;
-  padding: 4px 7px;
-}
-
 .mat-menu .content {
-  padding-top: 0px; 
+  padding-top: 0px !important; 
   margin: 0px 0px 0px 0px;
-  padding-bottom: 0px;
+  padding-bottom: 0px !important;
   }
 
 
-///
+
+
+/////////////////////////////////////////////////////
