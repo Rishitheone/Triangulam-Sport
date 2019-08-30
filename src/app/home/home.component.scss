@@ -308,16 +308,16 @@
  }
  .has-animation.animate-in:after {
    background-color: rgba(153, 205, 50, 0.527);
-   animation-delay: .5s;
+   animation-delay: .5s infinite;
  }
  .has-animation.animation-ltr.animate-in:before {
    animation: revealLTR 3.8s infinite;
  }
  .has-animation.animation-ltr.animate-in:after {
-   animation: revealLTR 5s infinite ;
+   animation: revealLTR 5s ease;
  }
  .has-animation.animation-rtl.animate-in:before {
-   animation: revealRTL 5.8s infinite;
+   animation: revealRTL 5.8s ease;
  }
  .has-animation.animation-rtl.animate-in:after {
    animation: revealRTL 1s 1.6s ease;
@@ -624,12 +624,12 @@
  
  .partner-details h1{
    color:yellow;
-   font-size: 50px;
+   font-size:42px;
  }
  
  .partner-details h2{
    color: #49ff00;
-   font-size: 40px;
+   font-size: 35px;
  }
  
   .partner-details p{

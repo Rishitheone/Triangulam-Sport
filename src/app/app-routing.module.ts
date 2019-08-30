@@ -7,6 +7,9 @@ import { PartnerComponent } from './partner/partner.component';
 import { OrganisationComponent } from './organisation/organisation.component';
 import { AdvisoryBoardComponent } from './advisory-board/advisory-board.component';
 import { DirectorsComponent } from './directors/directors.component';
+import { PartnersComponent } from './partners/partners.component';
+import { BecomePartnerComponent } from './become-partner/become-partner.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -16,7 +19,10 @@ const routes: Routes = [
   {path:'about',component:AbouUsComponent},
   {path:'partner',component:PartnerComponent},
   {path:'game-info',component:GameInfoComponent},
-  {path:'home',component:HomeComponent}
+  {path:'home',component:HomeComponent},
+  {path:'partners',component:PartnersComponent},
+  {path:'become-partners',component:BecomePartnerComponent},
+  {path:'contactUs',component:ContactUsComponent}
 ];
 
 @NgModule({
