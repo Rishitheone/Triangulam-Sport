@@ -12,6 +12,9 @@ import { GameInfoComponent } from './game-info/game-info.component';
 import { ParallaxDirective } from './parallax.directive';
 import {MatCardModule} from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
+
+import { PartnerComponent } from './partner/partner.component';
+
 import { OrganisationComponent } from './organisation/organisation.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { AdvisoryBoardComponent } from './advisory-board/advisory-board.component';
@@ -20,6 +23,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+
 
 
 @NgModule({
@@ -32,12 +36,18 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     GameInfoComponent,
     ParallaxDirective,
     FooterComponent,
+
+    PartnerComponent
     OrganisationComponent,
     AdvisoryBoardComponent,
+
     DirectorsComponent,
     PartnersComponent,
     BecomePartnerComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    DirectorsComponent
+
+
   ],
   imports: [
     BrowserModule,

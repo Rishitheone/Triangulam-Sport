@@ -10,8 +10,19 @@
 
     <span class="one" routerLink='home'>Home</span>
     <span class="one"  routerLink='about'>About Us</span>
+
     <span class="one" [matMenuTriggerFor]="org" >Organisation </span>
     <mat-menu #org="matMenu">
+
+
+    <span class="one" routerLink="">Organisation </span>
+    <span class="one" routerLink='partner'>Partners</span> 
+    <span class="one" routerLink="">Contact Us</span>
+
+    <span class="one" [matMenuTriggerFor]="menu" >Organisation </span>
+    <div class="dropdown">
+    <mat-menu #menu="matMenu">
+
       <button mat-menu-item  routerLink='directors'>Board of Directors</button>
       <button mat-menu-item  routerLink='AdvisoryBoard'>Advisory Board</button>
       <button mat-menu-item  routerLink='organisation'>Management</button>
@@ -24,6 +35,7 @@
           </mat-menu>
     
     <span class="one" routerLink="">Investors</span>
+
     <span class="one" routerLink='contactUs'>Contact Us</span>
     <span class="one" routerLink='game-info'>Game Info</span>
     <span class="last one">

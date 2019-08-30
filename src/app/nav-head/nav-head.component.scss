@@ -8,6 +8,9 @@
 .example-icon {
     padding: 0 14px;
   }
+  span.one:focus {
+    outline: none;
+}
   
   .example-spacer {
     flex: 1 1 auto;
@@ -18,6 +21,7 @@
     color: #5eff0e;
     font-weight: 500;
     text-decoration: none;
+    cursor: pointer;
   }
   span.last.one {
     padding-right:0px;
