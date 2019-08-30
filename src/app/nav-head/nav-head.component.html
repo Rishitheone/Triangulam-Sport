@@ -1,69 +1,57 @@
 <mat-toolbar class="top-nav">
   <mat-toolbar-row>
     <span class="logo">
-      <img src="assets/img/sports-logo-13.png" height="auto" width="120">
+      <img src="assets/img/sports-logo-13.png" class="avatar-01">
       <div class="txt"> <span class="txt1">TRIANGULUM<span>&nbsp;</span><span class="txt2">SPORTS</span></span></div>
 
     </span>
     <span class="example-spacer"></span>
-    
+
 
     <span class="one" routerLink='home' routerLinkActive="active">Home</span>
-    <span class="one"  routerLink='about' routerLinkActive="active">About Us</span>
-    <span class="one" routerLink='partner' routerLinkActive="active">Partners</span> 
-    <span class="one" routerLink='' routerLinkActive="active">Contact Us</span>
-    <span class="one" routerLink='home'>Home</span>
-    <span class="one"  routerLink='about'>About Us</span>
- <span class="one" [matMenuTriggerFor]="menu" >Organisation </span>
-    <mat-menu #menu="matMenu">
- <button mat-menu-item  routerLink='directors'>Board of Directors</button>
-      <button mat-menu-item  routerLink='directors' routerLinkActive="active">Board of Directors</button>
-      <button mat-menu-item  routerLink='AdvisoryBoard' routerLinkActive="active">Advisory Board</button>
-      <button mat-menu-item  routerLink='organisation' routerLinkActive="active">Management</button>
-      </mat-menu>
-    </div>
+    <!-- <span class="one"  routerLink='about' routerLinkActive="active">About Us</span> -->
 
-    <span class="one" routerLink="">Partners</span> 
-    <span class="one" [matMenuTriggerFor]="Investors" >Investors</span>
+
+    <span class="one" [matMenuTriggerFor]="menu">Organisation </span>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink='directors' routerLinkActive="active">Board of Directors</button>
+      <button mat-menu-item routerLink='AdvisoryBoard' routerLinkActive="active">Advisory Board</button>
+      <button mat-menu-item routerLink='organisation' routerLinkActive="active">Management</button>
+    </mat-menu>
+
+
+    <span class="one" [matMenuTriggerFor]="Investors">Investors</span>
     <mat-menu #Investors="matMenu">
       <button mat-menu-item routerLinkActive="active" routerLink='Eminent'>Our Eminent Investors</button>
       <button mat-menu-item routerLinkActive="active" routerLink='Notices'>Notices</button>
       <button mat-menu-item routerLinkActive="active" routerLink='InvestorsContacts'>Investors Contacts</button>
-      </mat-menu>
-    <span class="one" routerLinkActive="active" routerLink='game-info'>Game Info</span>
+    </mat-menu>
 
-      <button mat-menu-item  routerLink='directors'>Board of Directors</button>
-      <button mat-menu-item  routerLink='AdvisoryBoard'>Advisory Board</button>
-      <button mat-menu-item  routerLink='organisation'>Management</button>
-      </mat-menu>
-    
-      <span class="one" [matMenuTriggerFor]="partner" >Partners</span>
-      <mat-menu #partner="matMenu">
-          <button mat-menu-item   routerLink='partners'>Our Partners</button>
-          <button mat-menu-item  routerLink='become-partners'>Become A Partner</button>
-          </mat-menu>
-    
-    <span class="one" routerLink="">Investors</span>
+    <span class="one" [matMenuTriggerFor]="partner">Partners</span>
+    <mat-menu #partner="matMenu">
+      <button mat-menu-item routerLink='partners'>Our Partners</button>
+      <button mat-menu-item routerLink='become-partners'>Become A Partner</button>
+    </mat-menu>
 
-    <span class="one" routerLink='contactUs'>Contact Us</span>
-    <span class="one" routerLink='game-info'>Game Info</span>
+    <!-- <span class="one" routerLink='contactUs'>Contact Us</span> -->
+    <!-- <span class="one" routerLink='game-info'>Game Info</span> -->
     <span class="last one">
 
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" (click)="Onclose()">×</a>
         <div class="search">
-            <input type="search" id="fsearch" name="fsearch" placeholder="Search">
-            <button type="button" class="btn btn-primary" id="searchbtn"><i class="material-icons"> search</i></button>
-         <br> hit the enter
-         </div>
+          <input type="search" id="fsearch" name="fsearch" placeholder="Search">
+          <button type="button" class="btn btn-primary" id="searchbtn"><i class="material-icons"> search</i></button>
+          <br> hit the enter
+        </div>
       </div>
-      
+
       <div id="main">
-       
+
         <span class="searchbtn" (click)="Onclick()"><i class="material-icons"> search</i></span>
       </div>
 
     </span>
 
   </mat-toolbar-row>
-</mat-toolbar> 
+</mat-toolbar>

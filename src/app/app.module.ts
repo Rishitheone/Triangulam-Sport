@@ -13,7 +13,6 @@ import { ParallaxDirective } from './parallax.directive';
 import {MatCardModule} from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
 import {MatListModule} from '@angular/material/list';
-import { PartnerComponent } from './partner/partner.component';
 import {MatIconModule} from '@angular/material/icon';
 import { OrganisationComponent } from './organisation/organisation.component';
 import {MatMenuModule} from '@angular/material/menu';
@@ -45,8 +44,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     GameInfoComponent,
     ParallaxDirective,
     FooterComponent,
-
-    PartnerComponent,
     OrganisationComponent,
     AdvisoryBoardComponent,
     DirectorsComponent,

@@ -23,6 +23,35 @@
     text-decoration: none;
     cursor: pointer;
   }
+  img.avatar-01 {
+    width: 120px;height: auto;
+  }
+  @media screen and (max-width: 950px) {
+    .top-nav{
+      height: 60px;
+      width: 84%;
+    }
+    .txt{
+      display: none;
+    }
+    span.one {
+      padding: 0px 3px;
+      font-size: 10px;
+      color: #5eff0e;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  span.last.one {
+    display: none;
+}
+img.avatar-01 {
+  width: 50px;height: auto;
+  padding-top: 10px;
+}
+  }
+
+
   span.last.one {
     padding-right:0px;
   }
@@ -52,11 +81,7 @@
     text-align: center;
   }
 
-  @media screen and (max-width:600px){
-.txt{
-  font-size: 12px;
-}
-  }
+
   
   
   
