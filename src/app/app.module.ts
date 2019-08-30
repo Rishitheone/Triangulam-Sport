@@ -37,7 +37,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     ParallaxDirective,
     FooterComponent,
 
-    PartnerComponent
+    PartnerComponent,
     OrganisationComponent,
     AdvisoryBoardComponent,
 
