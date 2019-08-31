@@ -811,6 +811,8 @@ p {
   text-align: justify;
 }
 
+
+
 span {
 	font-size: 12px;
 }
@@ -1002,7 +1004,7 @@ textarea {
 	margin: 20px 0;
 }
 
-.social-container a {
+.social-container .social {
 	border: 1px solid #DDDDDD;
 	border-radius: 50%;
 	display: inline-flex;
@@ -1012,5 +1014,29 @@ textarea {
 	height: 40px;
 	width: 40px;
 }
+
+
+@media screen and (max-width:800px){
+  p {
+      font-size: 6px;
+     line-height: 14px;
+    text-align: justify;
+   }
+ 
+   .social-container{
+     display: inherit;
+     margin: 0px;
+ }
+ h1 {
+  font-size: 27px;
+}
+input{
+  width: 174px;
+}
+textarea{
+  width: 174px;
+}
+
+ }
 /////////////////////////////////////////////////////
 
