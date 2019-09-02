@@ -1295,3 +1295,19 @@ h2.top1 {
     color: darksalmon;
     font-weight: 200;
 }
+@media screen and (max-width: 950px) {
+  .fnc-slide__heading-line {
+    overflow: hidden;
+    position: relative;
+    padding-right: 10px;
+    font-size:75px;
+    color: #fff;
+    word-spacing: 5px;
+  }
+  .fnc-slide__content {
+    z-index: 2;
+    position: absolute;
+    left: 8%;
+    top: 21%;
+}
+}

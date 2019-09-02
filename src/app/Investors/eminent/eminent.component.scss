@@ -187,4 +187,11 @@ h2.top-1 {
       transform: rotate(22deg)
     }
   }
-  
+  @media screen and (max-width: 1300px) {
+    .wrapper svg text {
+      transform: translate(6%, 18%);
+    }
+    text.top-4{
+      font-size: 0.16rem !important;
+  }
+  }
