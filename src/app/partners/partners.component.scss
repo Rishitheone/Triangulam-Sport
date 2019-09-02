@@ -16,6 +16,7 @@
     z-index: 10;
     border-radius: 10%;
     padding-bottom: 18px;
+    padding: 30px;
     padding-top: 0px;
     color: #fff;
     text-align: center;
@@ -28,6 +29,16 @@ color: yellow;
 .carousel-caption p{
     font-size: 15px;
     text-align: justify
+    }
+
+    @media screen and (max-width:800px){
+        .carousel-caption {
+            position: absolute;
+            width: 90%;
+            right: 50%;
+            bottom: 27%;
+            left: 5%;
+        }
     }
 
 

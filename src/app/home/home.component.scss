@@ -66,7 +66,6 @@
    position: absolute;
    left: 21%;
    top: 70%;
-   z-index: 2;
    overflow: hidden;
    opacity: 0;
    margin-top: 70px;
@@ -143,7 +142,8 @@
  }
  
  .card-text{
-   width: auto;
+  width: 52%;
+  margin-left: 24%;
   text-align: center;
    background: #ff10eb47;
    padding: 24px;
@@ -155,11 +155,13 @@
  @media screen and (max-width: 1100px) {
    .card-text{
      margin-bottom:130px;
+     width: 52%;
      padding: 0px;
      width:auto;
      margin-left:25%;
    }
-   }
+}
+  
   
  
  .card-text .screen-heading{

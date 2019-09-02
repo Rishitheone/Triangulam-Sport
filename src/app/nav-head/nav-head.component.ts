@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 declare  const openNav:any;
 declare const closeNav:any;
 
+declare  const openNavbar:any;
+declare const closeNavbar:any;
 
 
 @Component({
@@ -15,7 +17,7 @@ export class NavHeadComponent implements OnInit {
   constructor() { }
 
 
-
+//For Search//////
 	Onclick(){
 		openNav()
 	}
@@ -24,10 +26,25 @@ export class NavHeadComponent implements OnInit {
 		closeNav()
 	}
 
+//////////////////////////
 
+
+
+//For side menu on small screen//
+  OnopenNavbar(){
+		openNavbar()
+	}
+
+	OncloseNavbar(){
+		closeNavbar()
+  }
+  
+  //////////////////////////////////////////////////
 
 
   ngOnInit() {
+
+    ////fadein fadeout///
     $(document).ready(function() {
       $('#close-btn').click(function() {
         $('#search-overlay').fadeOut();
@@ -38,6 +55,7 @@ export class NavHeadComponent implements OnInit {
         $('#search-overlay').fadeIn();
       });
     });
+    ///////////////////////////////////////////////////
   }
 
 }
