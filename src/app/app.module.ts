@@ -9,7 +9,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavHeadComponent } from './nav-head/nav-head.component';
 import { GameInfoComponent } from './game-info/game-info.component';
-import { ParallaxDirective } from './parallax.directive';
 import {MatCardModule} from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
 import {MatListModule} from '@angular/material/list';
@@ -42,7 +41,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     NavbarComponent,
     NavHeadComponent,
     GameInfoComponent,
-    ParallaxDirective,
     FooterComponent,
     OrganisationComponent,
     AdvisoryBoardComponent,
