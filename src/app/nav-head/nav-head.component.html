@@ -33,16 +33,14 @@
       <button mat-menu-item routerLink='become-partners'>Become A Partner</button>
     </mat-menu>
 
-    <!-- <span class="one" routerLink='contactUs'>Contact Us</span> -->
-    <!-- <span class="one" routerLink='game-info'>Game Info</span> -->
+   <!-- Search-->
     <span class="last one">
-
-      <div id="mySidenav" class="sidenav">
+ <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" (click)="Onclose()">×</a>
         <div class="search">
-          <input type="search" id="fsearch" name="fsearch" placeholder="Search">
-          <button type="button" class="btn btn-primary" id="searchbtn"><i class="material-icons"> search</i></button>
-          <br> hit the enter
+          <input type="text" id="fsearch" name="fsearch">
+          <button type="button" class="btn btn-primary" id="searchbtn">Search</button>
+          <br>Click the Search
         </div>
       </div>
 
@@ -50,8 +48,24 @@
 
         <span class="searchbtn" (click)="Onclick()"><i class="material-icons"> search</i></span>
       </div>
+</span>
+<!--End Search-->
 
-    </span>
 
+<!--Small screen sidenavbar-->
+<span class="small-screen-menu">
+
+  <div id="mySidenavbar" class="sidenavbar">
+    <a href="javascript:void(0)" class="closebtn" (click)="OncloseNavbar()">&times;</a>
+    <img src="assets/img/sports-logo-13.png" width="160">
+    <a routerLink='about' (click)="OncloseNavbar()">About Us </a>
+          <a routerLink="game-info" (click)="OncloseNavbar()">Game Info</a>
+          <a routerLink="contactUs" (click)="OncloseNavbar()">Contact Us </a>
+  </div>
+  
+  
+  <span style="font-size:30px;cursor:pointer" (click)="OnopenNavbar()">&#9776; </span>
+</span>
+<!--End Small screen sidenavbar-->
   </mat-toolbar-row>
 </mat-toolbar>
