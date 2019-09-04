@@ -19,6 +19,17 @@
     border-radius: 28px;
 }
 
+.container-fluid{
+text-align: center;
+    background: #49a1ff;
+    padding: 35px;
+}
+
+.background-dir{
+	width:303px;
+	background: #2e0249;
+	margin-left: 12%;
+}
 
 .director-name{
     background: #eac391;
@@ -27,7 +38,9 @@
     color: #3d0075;
 	font-size: 16px;
 	text-align: center;
-    font-weight: 600;
+	font-weight: 600;
+	border-radius: 14px;
+
 }
 
 @media screen and (max-width: 992px) {
