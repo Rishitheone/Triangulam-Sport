@@ -28,31 +28,36 @@ body {
 }
 
 .thm-container .title span {
-    font-family: 'Rubik', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #FF4328;
-}
+ background: rgb(219,83,158); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(219,83,158,1) 0%, rgba(212,56,134,1) 50%, rgba(174,0,81,1) 51%, rgba(230,48,127,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(219,83,158,1) 0%,rgba(212,56,134,1) 50%,rgba(174,0,81,1) 51%,rgba(230,48,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(219,83,158,1) 0%,rgba(212,56,134,1) 50%,rgba(174,0,81,1) 51%,rgba(230,48,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db539e', endColorstr='#e6307f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-.thm-container .title h2 {
-    color: #212121;
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 42px;
+    line-height: 40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     
 }
 
-@media screen and (max-width:800px){
-    .thm-container .title h2 {
-        font-size: 25px;
-    line-height: 25px;
-    }
+.thm-container .title h2 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f915+0,ff2151+50,fd193f+51,f9cf13+51,fe2474+100 */
+background: rgb(242,249,21); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(242,249,21,1) 0%, rgba(255,33,81,1) 50%, rgba(253,25,63,1) 51%, rgba(249,207,19,1) 51%, rgba(254,36,116,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(242,249,21,1) 0%,rgba(255,33,81,1) 50%,rgba(253,25,63,1) 51%,rgba(249,207,19,1) 51%,rgba(254,36,116,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(242,249,21,1) 0%,rgba(255,33,81,1) 50%,rgba(253,25,63,1) 51%,rgba(249,207,19,1) 51%,rgba(254,36,116,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f915', endColorstr='#fe2474',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-    .thm-container .title span {
-        font-family: 'Rubik', sans-serif;
-        font-size: 30px;
-        color: #FF4328;
-    }
+    font-size: 42px;
+    line-height: 55px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
+
+
 
 // .contact-form input, 
 // .contact-form textarea {
@@ -68,15 +73,25 @@ body {
 //     margin-bottom: 20px;
 //     display: block;
 // }
+.thm-btn:hover {
+    box-shadow: 12px 12px 12px rgba(34, 35, 58, 0.5);}
 .thm-btn {
     border: none;
     outline: none;
     display: inline-block;
     vertical-align: middle;
-    background: #FEC931;
-    color: #212121;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f9154e+0,9021ff+50,9619fd+51,f9137e+51,7024fe+100 */
+background: rgb(249,21,78); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(249,21,78,1) 0%, rgba(144,33,255,1) 50%, rgba(150,25,253,1) 51%, rgba(249,19,126,1) 51%, rgba(112,36,254,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(249,21,78,1) 0%,rgba(144,33,255,1) 50%,rgba(150,25,253,1) 51%,rgba(249,19,126,1) 51%,rgba(112,36,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(249,21,78,1) 0%,rgba(144,33,255,1) 50%,rgba(150,25,253,1) 51%,rgba(249,19,126,1) 51%,rgba(112,36,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9154e', endColorstr='#7024fe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    color: #fff;
     border-radius: 35px;
-    font-family: 'Rubik';
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        letter-spacing: 1px;
+        word-spacing: 2px;
     font-weight: 500;
     font-size: 16px;
     padding: 18px 69px;
@@ -86,7 +101,7 @@ body {
 
 .contact-info {
     margin-left: -30px;
-    border: 2px solid #EBEDF4;
+    // border: 2px solid #EBEDF4;
     padding-top: 75px;
     padding-bottom: 80px;
 }
@@ -136,4 +151,23 @@ body {
     position: relative;
     text-align: left;
     width: 100%;
+}
+@media screen and (max-width: 950px){
+    .thm-container .title span {
+        font-family: "Rubik", sans-serif;
+        font-size: 15px;
+        color: #FF4328;
+    }
+    .thm-container .title {
+        padding: 24px 37px 2px;
+    }
+    .contact-form-content {
+        padding: 80px 0;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+      .contact-info {
+        margin-left: 0px; 
+        border: 1px solid #EBEDF4;
+    }
 }
