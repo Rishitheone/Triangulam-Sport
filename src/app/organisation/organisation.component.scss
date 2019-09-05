@@ -89,14 +89,14 @@ $accent-color: #355cc9;
 .inner h2 {
 	grid-row: 2;
     font-size: 25px;
-    color: #f9ff00;
+    color: #ffffff;
     font-weight: 600;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 	}
 
 	.inner p{
 		grid-row: 3;
-		color: #f9ff00;
+		color: #ffffff;
 		font-weight: 500;
 		font-size: 15px;
 	}
@@ -167,8 +167,9 @@ $accent-color: #355cc9;
 	height: 3em;
 	line-height: 2.9em;
 	min-width: 3em;
-	background-color: transparent;
-	border: solid 2px #fff;
+	background: #00306a;
+    border-color: #00306a;
+	border: solid 2px #00306a;
 	color: #fff;
 	border-radius: 4px;
 	text-align: center;
@@ -179,6 +180,7 @@ $accent-color: #355cc9;
 
 	&:hover {
 		background-color: #fff;
+		border: solid 2px #fff;
 		box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 		text-shadow: none;
 		color: $accent-color;
