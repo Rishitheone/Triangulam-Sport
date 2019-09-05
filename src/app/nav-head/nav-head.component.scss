@@ -62,7 +62,7 @@ display: none;
     span.one {
       padding: 0px 3px;
       font-size: 10px;
-      color: #5eff0e;
+      color: white;
       font-weight: 500;
       text-decoration: none;
       cursor: pointer;
@@ -117,12 +117,13 @@ img.avatar-01 {
   //SEARCH//
 
   .searchbtn{
-    font-size: 25px;
+   
+    font-size: 28px;
     cursor: pointer;
-    color: white;
-    border: 1px solid #54ff00;
-    padding: 0 7px;
-    background: #54ff00;
+    color: #007bff;
+    border: 0px solid #fafafa;
+    padding: 0px 9px;
+    background: #ffffff;
     border-radius: 30px;
 }
   
@@ -230,6 +231,17 @@ outline:none;
 
 
 /////small screen sidenavbar menu///////////////////
+
+.small-screen-menu{
+font-size: 26px;
+    cursor: pointer;
+    background: white;
+    padding: 0px 3px;
+    color: #3386eb;
+    border-radius: 50%;
+    
+}
+
 .sidenavbar {
   height: 100%;
   width: 0;
@@ -237,7 +249,7 @@ outline:none;
   z-index: 1;
   top: 0;
   right: 0;
-  background-color:#ffd400;
+  background:-webkit-linear-gradient(0deg, #028749 0%, #150980 100%);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -248,14 +260,14 @@ outline:none;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #000000;
+  color: #f1f1f1;
   margin-right: 22px;
   display: block;
   transition: 0.3s;
 }
 
 .sidenavbar a:hover {
-  color: #f1f1f1;
+  color: #000000;
 }
 
 .sidenavbar .closebtn {
