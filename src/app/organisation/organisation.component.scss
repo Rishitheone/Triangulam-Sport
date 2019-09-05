@@ -167,9 +167,8 @@ $accent-color: #355cc9;
 	height: 3em;
 	line-height: 2.9em;
 	min-width: 3em;
-	background: #00306a;
-    border-color: #00306a;
-	border: solid 2px #00306a;
+	background: -webkit-linear-gradient(0deg, #070023 0%, #46021e 100%);
+	border: solid 2px -webkit-linear-gradient(0deg, #070023 0%, #46021e 100%);
 	color: #fff;
 	border-radius: 4px;
 	text-align: center;
@@ -179,7 +178,7 @@ $accent-color: #355cc9;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 
 	&:hover {
-		background-color: #fff;
+		background: #fff;
 		border: solid 2px #fff;
 		box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 		text-shadow: none;
