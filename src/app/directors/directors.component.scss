@@ -2,7 +2,7 @@
 //Board Of Director
 
 .heading-board{
-    background: #8ac109;
+ background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
     padding: 12px;
 }
 @media screen and (max-width: 992px) {
@@ -13,7 +13,8 @@
   }
 .heading-board h2{
     text-align: center;
-    background: #ffe100;
+	background: linear-gradient(to left, #eb0176 0%, #490076 100%);
+    color: white;
     font-family: inherit;
     font-weight: 700;
     border-radius: 28px;
@@ -22,7 +23,11 @@
 .container-fluid{
 text-align: center;
     background: #49a1ff;
-    padding: 35px;
+	padding: 3% 0px;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .background-dir{
@@ -30,6 +35,15 @@ text-align: center;
 	background: #2e0249;
 	margin-left: 12%;
 }
+
+@media screen and (max-width:1000px){
+	.background-dir{
+		width:100%;
+		background: #2e0249;
+		margin-left: 0%;
+	}
+}
+
 
 .director-name{
     background: #eac391;
