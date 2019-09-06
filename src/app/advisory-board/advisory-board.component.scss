@@ -1,11 +1,12 @@
 .heading-board{
-    background: #8ac109;
-    padding: 12px;
+   background: linear-gradient(to left, #02305d 0%, #8b002e 100%);
+ padding: 12px;
 }
 
 .heading-board h2{
     text-align: center;
-    background: #ffe100;
+    background: linear-gradient(to left,  #fe0069 0%,#01ffdb 100%);
+    color:black;
     font-family: inherit;
     font-weight: 700;
     border-radius: 28px;
@@ -57,7 +58,7 @@ background-color: rgba(4, 4, 4, 0.8);
 }
 
 .modal-header .modal-title{
-color: #05500c;
+color: #070233;
 font-weight: 700;
 font-size: 23px;
 }

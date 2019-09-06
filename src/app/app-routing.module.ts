@@ -12,6 +12,8 @@ import { InvestorsContactComponent } from './Investors/investors-contact/investo
 import { PartnersComponent } from './partners/partners.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { MissionComponent } from './mission/mission.component';
+import { ObjectiveComponent } from './objective/objective.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -26,7 +28,9 @@ const routes: Routes = [
   {path:'InvestorsContacts',component:InvestorsContactComponent},
   {path:'partners',component:PartnersComponent},
   {path:'become-partners',component:BecomePartnerComponent},
-  {path:'contactUs',component:ContactUsComponent}
+  {path:'contactUs',component:ContactUsComponent},
+  {path:'mission',component:MissionComponent},
+  {path:'objective',component:ObjectiveComponent}
 ];
 
 @NgModule({

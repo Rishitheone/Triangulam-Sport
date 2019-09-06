@@ -3,9 +3,9 @@
     <span class="logo">
       <a routerLink="home">
         <img src="assets/img/sports-logo-13.png" class="avatar-01">
-      </a>
-      <!-- <div class="txt"> <span class="txt1">TRIANGULUM<span>&nbsp;</span><span class="txt2">SPORTS</span></span></div> -->
-
+     
+      <div class="txt"> <span class="txt1">TRIANGULUM<span>&nbsp;</span><span class="txt2">SPORTS</span></span></div> 
+    </a>
     </span>
     <span class="example-spacer"></span>
 
@@ -17,14 +17,13 @@
         
         <span>About Us</span>
       </button>
-      <button mat-menu-item routerLink='AdvisoryBoard' routerLinkActive="active">
+      <button mat-menu-item routerLink='mission' routerLinkActive="active">
         <mat-icon class="mat-icons">local_florist</mat-icon>
-        
-        <span>Mission</span>
+       <span>Mission</span>
       </button>
-      <button mat-menu-item routerLink='organisation' routerLinkActive="active">
+
+      <button mat-menu-item routerLink='objective' routerLinkActive="active">
         <mat-icon class="mat-icons">pie_chart</mat-icon>
-        
         <span>Objective</span>
       </button>
     </mat-menu>
@@ -92,7 +91,7 @@
       <div id="mySidenavbar" class="sidenavbar">
         <a href="javascript:void(0)" class="closebtn" (click)="OncloseNavbar()">&times;</a>
         <img src="assets/img/sports-logo-13.png" width="160">
-        <a routerLink='about' (click)="OncloseNavbar()">About Us </a>
+        <a routerLink='home' (click)="OncloseNavbar()">Home</a>
         <a routerLink="game-info" (click)="OncloseNavbar()">Game Info</a>
         <a routerLink="contactUs" (click)="OncloseNavbar()">Contact Us </a>
       </div>

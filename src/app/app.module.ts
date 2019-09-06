@@ -30,6 +30,8 @@ import { PartnersComponent } from './partners/partners.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { MissionComponent } from './mission/mission.component';
+import { ObjectiveComponent } from './objective/objective.component';
 
 
 
@@ -53,7 +55,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     PartnersComponent,
     BecomePartnerComponent,
     ContactUsComponent,
-    DirectorsComponent
+    DirectorsComponent,
+    MissionComponent,
+    ObjectiveComponent
 
 
   ],
