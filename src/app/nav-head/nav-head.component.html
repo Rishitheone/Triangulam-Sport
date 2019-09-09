@@ -8,7 +8,7 @@
     </a>
     </span>
     <span class="example-spacer"></span>
-
+    <span class="one"  routerLink="home">Home</span>
 
     <span class="one" [matMenuTriggerFor]="about" routerLinkActive="active">About</span>
     <mat-menu #about="matMenu" yPosition="below">
@@ -46,21 +46,21 @@
     </mat-menu>
 
 
-    <span class="one" [matMenuTriggerFor]="Investors">Investors</span>
+    <!-- <span class="one" [matMenuTriggerFor]="Investors">Investors</span>
     <mat-menu #Investors="matMenu" yPosition="below">
-      <!-- <button mat-menu-item routerLinkActive="active" routerLink='Eminent'>
+      <button mat-menu-item routerLinkActive="active" routerLink='Eminent'>
           <mat-icon class="mat-icons">how_to_reg</mat-icon>
         <span>Our Eminent Investors</span>
-      </button> -->
-      <!-- <button mat-menu-item routerLinkActive="active" routerLink='Notices'>
+      </button>
+      <button mat-menu-item routerLinkActive="active" routerLink='Notices'>
           <mat-icon class="mat-icons">receipt</mat-icon>
           <span>Notices</span>
-        </button> -->
+        </button>
       <button mat-menu-item routerLinkActive="active" routerLink='InvestorsContacts'>
           <mat-icon class="mat-icons">device_hub</mat-icon>
           <span>Investors Contacts</span>
         </button>
-    </mat-menu>
+    </mat-menu> -->
 
     <span class="one" [matMenuTriggerFor]="partner">Partners</span>
     <mat-menu #partner="matMenu" yPosition="below">
@@ -82,10 +82,19 @@
         <span class="searchbtn" (click)="Onclick()"><i class="material-icons"> search</i></span>
       </div>
     </span>
+   
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" (click)="Onclose()">×</a>
+        <div class="search">
+          <input type="text" id="fsearch" name="fsearch">
+          <button type="button" class="btn btn-primary" id="searchbtn">Search</button>
+      
+        </div>
+      </div>
     <!--End Search-->
 
-
-    <!--Small screen sidenavbar-->
+ <!--Small screen sidenavbar-->
     <!-- <span class="small-screen-menu">
 
       <div id="mySidenavbar" class="sidenavbar">
@@ -100,15 +109,6 @@
       <span class="small-screen-menu" (click)="OnopenNavbar()">&#9776; </span>
     </span> -->
     <!--End Small screen sidenavbar-->
+
   </mat-toolbar-row>
 </mat-toolbar>
-
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" (click)="Onclose()">×</a>
-  <div class="search">
-    <input type="text" id="fsearch" name="fsearch">
-    <button type="button" class="btn btn-primary" id="searchbtn">Search</button>
-
-  </div>
-</div>
