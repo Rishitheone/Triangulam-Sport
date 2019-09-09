@@ -24,6 +24,13 @@
     user-select: none;
 }
 
+@media screen and (max-width:800px){
+    .text {
+        font-size:50px;
+    }
+
+}
+
 .text::before {
     content: attr(data-text);
     position: absolute;

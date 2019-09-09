@@ -446,7 +446,7 @@ text-align: center;
 //Sports Arena Your home for esports
 
 .urhome{
- background:url("/../assets/img/partner0.png");
+  background: aliceblue;
 }
 .main-heading{
  width: 100%;
@@ -699,11 +699,13 @@ color: #460041;
 .partner-details h1{
  color:#ff04ec;
  font-size:42px;
+ 
 }
 
 .partner-details h2{
  color: #007fff;
  font-size: 35px;
+ visibility: unset;
 }
 
 .partner-details p{

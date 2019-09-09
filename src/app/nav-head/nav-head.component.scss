@@ -46,6 +46,10 @@ box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(63,81,181, 0.
     width: 120px;height: auto;
   }
 
+  span.last.one {
+    padding-right: 80px;
+  }
+
   @media screen and (max-width: 950px) {
     .top-nav{
       height: 60px;
@@ -61,7 +65,7 @@ box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(63,81,181, 0.
       cursor: pointer;
   }
   span.last.one {
-    display: none;
+    padding-right: 0px;
 }
 img.avatar-01 {
   width: 50px;height: auto;
@@ -70,9 +74,7 @@ img.avatar-01 {
   }
 
 
-  span.last.one {
-    padding-right: 80px;
-  }
+
   // .mat-toolbar-multiple-rows {
   //   min-height: 64px;  
   //   background: #000b1b9e;
@@ -179,7 +181,13 @@ img.avatar-01 {
     border-top-right-radius: 15px;
   }
   
-  
+  @media screen and (max-width:900px){
+    #searchbtn{
+      padding: 21px 30px;
+  }
+}
+
+
   .material-icons{
   font-size: 18px;
   }
