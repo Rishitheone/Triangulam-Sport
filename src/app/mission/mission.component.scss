@@ -1,81 +1,110 @@
-.body {
-    margin: 0;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-}
 
-.neon {
-    position: relative;
-    overflow: hidden;
-    filter: brightness(200%);
-}
-
-.text {
-    background-color: black;
-    color: white;
-    font-size: 100px;
-    font-weight: bold;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    user-select: none;
-}
-
-@media screen and (max-width:800px){
-    .text {
-        font-size:50px;
+@keyframes tipsy {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
     }
-
-}
-
-.text::before {
-    content: attr(data-text);
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  
+.ba-1 {
+    font-family: helvetica, arial, sans-serif;
+   width: 100%;
+    height:500px;
+  }
+  
+  .w-100 p {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
     position: absolute;
-    color: white;
-    filter: blur(0.02em);
-    mix-blend-mode: difference;
-}
-
-.gradient {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .w-100 p:before,
+  .w-100 p:after {
+    content: '';
+    padding: .9em .4em;
     position: absolute;
-    background: linear-gradient(45deg, red, gold, lightgreen, gold, red);
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 15px solid red;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+  }
+  
+  .w-100 p:before {
+    border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  .w-100 p:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+  }
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    mix-blend-mode: multiply;
-}
-
-.spotlight {
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(
-            circle,
-            white,
-            transparent 25%
-        ) center / 25% 25%,
-        radial-gradient(
-            circle,
-            white,
-            black 25%
-        ) center / 12.5% 12.5%;
-    animation: light 5s linear infinite;
-    mix-blend-mode: color-dodge;
-}
-
-@keyframes light {
-    to {
-        transform: translate(50%, 50%);
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
     }
-}
+    header video {
+      display: none;
+    }
+  }
 
+
+
+
+/////////////////////////////////////////////////////////
 
 .para-background{
        background: linear-gradient(to left, #0e0145 0%, #017580 100%);
