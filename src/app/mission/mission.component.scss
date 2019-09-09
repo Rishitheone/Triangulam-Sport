@@ -24,6 +24,13 @@
     user-select: none;
 }
 
+@media screen and (max-width:800px){
+    .text {
+        font-size:50px;
+    }
+
+}
+
 .text::before {
     content: attr(data-text);
     position: absolute;
@@ -71,12 +78,12 @@
 
 
 .para-background{
-    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+       background: linear-gradient(to left, #0e0145 0%, #017580 100%);
 }
 
 .para{
     padding: 3% 10%;
     text-align: justify;
     font-size: 15px;
-    color: #00427c;
+    color: white;
 }

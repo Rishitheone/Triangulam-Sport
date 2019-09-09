@@ -31,10 +31,10 @@
 
     <span class="one" [matMenuTriggerFor]="menu">Organisation </span>
     <mat-menu #menu="matMenu" yPosition="below">
-      <button mat-menu-item routerLink='directors' routerLinkActive="active">
+      <!-- <button mat-menu-item routerLink='directors' routerLinkActive="active">
         <mat-icon class="mat-icons">person</mat-icon>
         <span>Board of Directors</span>
-      </button>
+      </button> -->
       <button mat-menu-item routerLink='AdvisoryBoard' routerLinkActive="active">
         <mat-icon class="mat-icons">deck</mat-icon>
         <span>Advisory Board</span>
@@ -86,7 +86,7 @@
 
 
     <!--Small screen sidenavbar-->
-    <span class="small-screen-menu">
+    <!-- <span class="small-screen-menu">
 
       <div id="mySidenavbar" class="sidenavbar">
         <a href="javascript:void(0)" class="closebtn" (click)="OncloseNavbar()">&times;</a>
@@ -98,7 +98,7 @@
 
 
       <span class="small-screen-menu" (click)="OnopenNavbar()">&#9776; </span>
-    </span>
+    </span> -->
     <!--End Small screen sidenavbar-->
   </mat-toolbar-row>
 </mat-toolbar>

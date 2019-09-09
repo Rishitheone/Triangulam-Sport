@@ -8,12 +8,12 @@ background: black;
 .m2{animation:mk2 500ms linear infinite alternate;}
 .word_section{animation:mk22 700ms linear infinite alternate;}
 @keyframes mk1{
-    from{color:#f70466;}
+    from{color:rgb(51, 122, 183);}
     to{color:rgb(51, 122, 183);}
 }
 @keyframes mk2{
     from{color:rgb(51, 122, 183);}
-    to{color:#f70466;}
+    to{color:white;}
 }
 @keyframes mk22{
     from{letter-spacing:2px;border-bottom:3px dotted rgb(92, 184, 92);}

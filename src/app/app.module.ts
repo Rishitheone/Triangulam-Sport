@@ -32,6 +32,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MissionComponent } from './mission/mission.component';
 import { ObjectiveComponent } from './objective/objective.component';
+import { ScolledFooterComponent } from './scolled-footer/scolled-footer.component';
 
 
 
@@ -57,7 +58,8 @@ import { ObjectiveComponent } from './objective/objective.component';
     ContactUsComponent,
     DirectorsComponent,
     MissionComponent,
-    ObjectiveComponent
+    ObjectiveComponent,
+    ScolledFooterComponent
 
 
   ],
