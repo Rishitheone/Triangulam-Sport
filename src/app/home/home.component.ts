@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 
-declare const WOW,wow,parentNode:any;
 
 @Component({
   selector: 'app-home',
@@ -24,11 +23,7 @@ export class HomeComponent implements OnInit {
 
     ////////////////////////////////////////////////////
      
-//Triangulum Sports – Your Home For e-Sports
 
-wow.init();
- 
-////////////////////////////////////////////////////////
 
 
 

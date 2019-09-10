@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+
+declare const WOW,wow,parentNode:any;
+
 @Component({
   selector: 'app-abou-us',
   templateUrl: './abou-us.component.html',
@@ -60,7 +63,13 @@ export class AbouUsComponent implements OnInit {
     const cardItem = this.querySelector(".card");
     cardItem.style.transform = "rotate(0)";
   }
+///////////////////
 
+//Triangulum Sports – Your Home For e-Sports
+
+wow.init();
+ 
+////////////////////////////////////////////////////////
   }
 
 }
