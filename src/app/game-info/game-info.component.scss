@@ -922,7 +922,10 @@ h1 {
 // First example styles
 .example-1 {
   .wrapper {
-	  background-image: url('../../assets/img/pubg.png')
+    background-image: url('../../assets/img/Call-Of-Duty.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .date {
     position: absolute;
@@ -1023,7 +1026,10 @@ h1 {
 // Second example styles
 .example-2 {
   .wrapper {
-	background-image: url('../../assets/img/batman.png');
+  background-image: url('../../assets/img/crash-bandicoot.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     &:hover {
       .menu-content {
         span {

@@ -1,16 +1,31 @@
-.heading-board{
-   background: linear-gradient(to left, #02305d 0%, #8b002e 100%);
- padding: 12px;
+
+.cover-advisor{
+  background-image: url("/../assets/img/back-org.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+	background-size: cover;
 }
 
+
 .heading-board h2{
-    text-align: center;
-    background: linear-gradient(to left,  #fe0069 0%,#01ffdb 100%);
-    color:black;
-    font-family: inherit;
-    font-weight: 700;
-    border-radius: 28px;
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 1;
+  color: #ffffff;
+padding:4%;
+background: #4c44f68f;
+margin: 0px;
 }
+
+.advisor-detail{
+  background: #4c44f68f;
+  padding-bottom: 7%;
+ 
+}
+
 @media screen and (max-width: 992px) {
     .img-responsive  {
       width:100%;
@@ -22,7 +37,7 @@
 }
 .advisor-name{
     background: white;
-    width: 270px;
+    width: 100%;
     padding: 3%;
     color: #3d0075;
     font-size: 16px;
@@ -30,16 +45,6 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 992px) {
-    .advisor-name {
-      width:100%;
-    }
-  
-  }
-
-.advisor-detail{
-  background: black;
-}
 
 .modal  {
 background-color: rgba(4, 4, 4, 0.8); 

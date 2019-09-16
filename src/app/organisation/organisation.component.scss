@@ -16,15 +16,40 @@ $accent-color: #355cc9;
 }
 
 
+.cover-manage{
+	background-image: url("/../assets/img/back-org.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.heading{
+	font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 1;
+    color: #ffffff;
+	padding:4%;
+	background: #4c44f68f;
+	margin: 0px;
+	
+}
+
+
 .wrapper {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	background: #4c44f68f;
+	padding-bottom: 7%;
+ 
+	
 }
 
 .card {
-	width:365px;
-	height: 400px;
+	width:45%;
+	height: 510px;
 	margin: 1em;
 	perspective: 1500px;
 	.content {
@@ -212,5 +237,13 @@ $accent-color: #355cc9;
 }
 
 .inner img{
-    border-radius: 30%;
+   width:110%;
+   height:360px;
+   margin-top: -26px;
+}
+
+@media screen and (max-width:800px){
+	.card {
+		width:100%;
+	}	
 }
