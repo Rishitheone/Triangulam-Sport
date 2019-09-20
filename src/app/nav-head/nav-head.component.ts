@@ -17,6 +17,7 @@ export class NavHeadComponent implements OnInit {
   constructor() { }
 
 
+
 //For Search//////
 	Onclick(){
 		openNav()

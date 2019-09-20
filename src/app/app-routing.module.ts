@@ -20,7 +20,7 @@ const routes: Routes = [
   {path:'directors',component:DirectorsComponent},
   {path:'organisation',component:OrganisationComponent},
   {path:'AdvisoryBoard', component:AdvisoryBoardComponent},
-  {path:'about',component:AbouUsComponent},
+  {path:'about',component:AbouUsComponent, pathMatch: 'full'},
   {path:'game-info',component:GameInfoComponent},
   {path:'home',component:HomeComponent},
   {path:'Eminent',component:EminentComponent},
