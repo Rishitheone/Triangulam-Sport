@@ -20,6 +20,9 @@ background: #4c44f68f;
 margin: 0px;
 }
 
+.card{
+  margin:3em 4em;
+}
 .advisor-detail{
   background: #4c44f68f;
   padding-bottom: 7%;
@@ -30,7 +33,9 @@ margin: 0px;
     .img-responsive  {
       width:100%;
     }
-  
+    .card{
+      margin:5px 0px;
+    }
   }
 .row{
   margin: 0px;

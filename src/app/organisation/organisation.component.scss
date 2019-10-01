@@ -48,9 +48,9 @@ $accent-color: #355cc9;
 }
 
 .card {
-	width:45%;
-	height: 510px;
-	margin: 1em;
+	width: 37%;
+    height: 510px;
+    margin: 3em 4em;
 	perspective: 1500px;
 	.content {
 		position: relative;
@@ -237,7 +237,7 @@ $accent-color: #355cc9;
 }
 
 .inner img{
-   width:110%;
+   width:112%;
    height:360px;
    margin-top: -26px;
 }
@@ -245,5 +245,6 @@ $accent-color: #355cc9;
 @media screen and (max-width:800px){
 	.card {
 		width:100%;
+		margin:5px;
 	}	
 }
